@@ -18,6 +18,15 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-     path('', include('snippets.urls')),
+    path('', include('snippets.urls')),
+    path('', include('todos.urls')),
     path('admin/', admin.site.urls),
 ]
+
+'''
+python manage.py makemigrations
+python manage.py migrate
+
+ http GET http://127.0.0.1:8000/todos/1 --unsorted
+
+'''
