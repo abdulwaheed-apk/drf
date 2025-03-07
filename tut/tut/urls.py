@@ -25,6 +25,7 @@ urlpatterns = [
 
 '''
 python manage.py makemigrations
+python manage.py makemigrations snippets
 python manage.py migrate
 
  http GET http://127.0.0.1:8000/todos/1 --unsorted
